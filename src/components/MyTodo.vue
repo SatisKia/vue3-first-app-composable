@@ -45,7 +45,6 @@ export default defineComponent({
     // computed
     const { sortedTodo } = useSort(todoList)
 
-    // mounted
     onMounted(async () => {
       // データの読み込み
       await loadData()

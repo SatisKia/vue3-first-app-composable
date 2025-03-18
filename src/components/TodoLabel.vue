@@ -5,7 +5,7 @@
         <tbody>
           <tr>
             <td class="td" style="width:5%">
-              <input type="checkbox" value="todo.done" v-on:change="done" />
+              <input type="checkbox" v-bind:checked="todo.done" v-on:change="done" />
             </td>
             <td class="td" style="width:20%">
               <span>{{ date }}</span>
