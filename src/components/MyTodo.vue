@@ -50,6 +50,7 @@ export default defineComponent({
       await loadData()
     })
 
+    // template内で使用するプロパティ
     return {
       addTodo,
       removeTodo,
