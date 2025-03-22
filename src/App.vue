@@ -1,5 +1,7 @@
 <template>
-  <my-todo />
+  <div id="app">
+    <my-todo />
+  </div>
 </template>
 
 <script lang="ts">

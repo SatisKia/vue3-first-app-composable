@@ -1,5 +1,6 @@
 <template>
   <div>
+    <span>TODO:</span>
     <input type="text" class="input" v-model="state.text" />
     <div>
       <input type="radio" id="color1" name="color" value="#80ffff" checked />
@@ -68,7 +69,7 @@ export default defineComponent({
 .input {
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #e0e0e0;
   padding: 4px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
