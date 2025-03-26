@@ -22,11 +22,9 @@ export default (todoList: Ref<Todo[]>) => {
   }
 
   const doneTodo = (id: string) => {
-    const newTodoList = todoList.value.slice()
-    const todo = newTodoList.find((todo: Todo) => todo.id === id)
+    const todo = todoList.value.find((todo: Todo) => todo.id === id)
     if (todo) {
       todo.done = !todo.done
-      todoList.value = newTodoList
       saveData()
     }
   }

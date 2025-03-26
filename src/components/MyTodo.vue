@@ -23,7 +23,7 @@ import useAction from '@/composables/action'
 import useSort from '@/composables/sort'
 
 interface State {
-  todoList: Todo[];
+  todoList: Todo[]
 }
 
 export default defineComponent({

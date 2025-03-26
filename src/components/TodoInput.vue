@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>TODO:</span>
-    <input type="text" class="input" v-model="state.text" />
+    <input type="text" class="input" v-model="state.text" placeholder="100文字まで" />
     <div>
       <input type="radio" id="color1" name="color" value="#80ffff" checked />
       <label for="color1">シアン</label>
@@ -23,8 +23,8 @@
 import { defineComponent, reactive, watchEffect } from 'vue'
 
 interface State {
-  text: string;
-  isError: boolean;
+  text: string
+  isError: boolean
 }
 
 export default defineComponent({
